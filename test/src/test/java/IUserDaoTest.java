@@ -1,5 +1,5 @@
-import com.olq.service.dao.IUserD;
-import com.olq.service.model.User;
+import com.olq.service.dao.IUserDao;
+import com.olq.service.model.UserBean;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -14,12 +14,12 @@ import javax.annotation.Resource;
 public class IUserDaoTest {
 
     @Resource
-    private IUserD dao;
+    private IUserDao dao;
 
     @Test
     public void testSelectUser() throws Exception {
         long id = 1;
-        User user = dao.selectUser(id);
+        UserBean user = dao.selectUser(id);
         System.out.println("用户："+user.getUsername()+"----"+user.getPassword());
     }
 

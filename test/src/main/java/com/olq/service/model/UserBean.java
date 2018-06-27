@@ -1,7 +1,7 @@
 package com.olq.service.model;
 
 
-public class User {
+public class UserBean {
 
     private long uid;
 //    private String email;
